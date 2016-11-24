@@ -1,0 +1,14 @@
+main .address{ margin-top: 20px; margin-bottom: 10px;}
+main .address span{color:#ff8001; font-size:12px;margin-right:6px; margin-bottom:20px;}
+main .p-t{ height:1px; width:891px;margin-left:112px;background:linear-gradient(to right,#fff,#999,#ccc,#eee)}
+main .first-span{margin-left:114px; *margin-left:114px;font-weight:bold; background:url(../images/trigon-red.gif) no-repeat left;padding-left:14px;}
+main .second-span{ background:url(../images/span2.gif) no-repeat left; padding-left:10px;}
+main .third-span{background:url(../images/span3.gif) no-repeat;padding-left:10px;}
+main .product{ width: 141px;margin-top: 100px;float: left;}
+main .product ul li img{ vertical-align: middle;}
+main .yyjz{ margin-left: 200px;}
+main .h-bott{height: 1px;width:634px;background: url(../images/line3.gif); font-size:1px;}
+main .yyjz h3{color:#fd5c04;margin:15px 0;font-size:14px;}
+main .yyjz p{font-size: 12px;line-height:22px;color:#333;}
+main .yyjz dl{}
+main .yyjz dl dt{font-size:12px;font-weight:bold;color:#333;margin-top:10px;}

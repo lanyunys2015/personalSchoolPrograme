@@ -1,0 +1,56 @@
+.main{ width: 1440px; margin: 0 auto;height: 1270px; }
+.main .hexin{ }
+.main .hexin ul li{ float:left; margin-right:5px; position: relative;}
+.main .hexin ul li.view-two{ }
+
+.main .hexin ul li .b6{ position:absolute; left:609px; top:265px;}
+.main .hexin ul li .b9{ position:absolute; left:1024px; top:265px;}
+
+.main .hexin ul li .b1_1{ position:absolute; left:0; top:210px; display: none; width:350px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b1:hover .b1_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .b3_1{ position:absolute; left:767px; top:210px; display: none; width:450px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b3:hover .b3_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .b2_2{ position:absolute; left:358px; top:210px; display: none; width:400px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b2:hover .b2_2{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .b6_1{ position:absolute; left:0px; top:145px; display: none; width:406px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b6:hover .b6_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .b7_1{ position:absolute; left:0; top:570px;display: none; width:600px;height: 100px; line-height:100px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b7:hover .b7_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .b8_1{ position:absolute; left:1022px; top:615px;display: none; width:406px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b8:hover .b8_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .b9_1{ position:absolute; left:0px; top:145px;display: none; width:406px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b9:hover .b9_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .b10_1{ position:absolute; left:609px; top:613px;display: none; width:406px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .b10:hover .b10_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .c1_1{ position:absolute; left:0px; top:550px;display: none; width:500px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .c1:hover .c1_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .c2_1{ position:absolute; left:508px; top:550px;display: none; width:440px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .c2:hover .c2_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .c3_1{ position:absolute; left:960px; top:550px;display: none; width:465px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .c3:hover .c3_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .c5_1{ position:absolute; left:508px; top:246px;display: none; width:442px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .c5:hover .c5_1{ display:block;animation:b2 2s ease;}
+
+.main .hexin ul li .c6_1{ position:absolute; left:0px; top:146px;display: none; width:465px;height: 50px; line-height:50px;text-align: center;background: rgba(54,217,0,0.5);color: #fff;}
+.main .hexin ul li .c6:hover .c6_1{ display:block;animation:b2 2s ease;}
+
+@keyframes b2{
+    0%{-webkit-transform:scaleY(0);}
+    100%{-webkit-transform:scaleY(1);}
+}
+
+.main .hexin ul li .c5_2{ position:absolute; left:650px; top:0px;}
+.main .hexin ul li .c6{ position:absolute; left:958px; top:0px;}
+.main .hexin ul li .c7{ position:absolute; left:508px; top:0px;}
+.main .hexin ul li div a{ font-family: "微软雅黑"; color:#fff;}

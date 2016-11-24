@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商品介绍</title>
+    <script src="js/jquery-1.6.js"></script>
+    <script src="js/jquery.jqzoom-core.js"></script>
+    <script type="text/javascript" src="./js/cookies.js"></script>
+    <script src="js/globe.js"></script>
+    <link rel="stylesheet" href="styles/basic.css" />
+    <link rel="stylesheet" href="styles/jquery.jqzoom.css"/>
+    <script type="text/javascript" src="./js/product.js"></script>
+</head>
+<body>
+<header class="headerBar">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="leftArea">
+                <a href="#" class="collection">绿色健康--丰富的维生素C</a>
+            </div>
+            <div class="rightArea" id="rightArea">
+                欢迎来到赣南脐橙网！<a id="index_login" href="login.html">[登录]</a><a id="index_register" href="register.html">[免费注册]</a>
+            </div>
+        </div>
+    </div>
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="#"><img src="images/logo.jpg" alt="赣南脐橙"></a>
+            </div>
+            <div class="search_box fl">
+                <input type="text" class="search_text fl">
+                <input type="button" value="搜 索" class="search_btn fr">
+            </div>
+            <div class="shopCar fr">
+                <a href="shopCar.html" class="shopText fl">购物车</a>
+                <a href="account.html" class="shopNum fl">订单</a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav">
+        <img src="images/icon/card_v1.gif" alt="" class="images_1"/>
+        <img src="images/icon/x.gif" alt="" class="images_2"/>
+        <ul id="nav">
+
+            <li><a href="index.html">首页</a></li>
+            <li><a href="productIntrodius.html">产品知识</a></li>
+            <li><a href="photoExhibition.html">图片展</a></li>
+            <!--<li><a href="about.html">关于我们</a></li>-->
+            <li><a href="source.html">人力资源</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--主体部分-->
+
+<main>
+<div class="userPosition comWidth">
+    <strong><a href="#">首页</a></strong>
+    <span>&nbsp;&gt;&nbsp;</span>
+    <a href="#">橙中妙品</a>
+    <span>&nbsp;&gt;&nbsp;</span>
+    <em>塔罗科血橙</em>
+</div>
+<div class="description_info comWidth">
+    <div class="description clearfix">
+        <div class="leftArea">
+            <div class="description_imgs">
+                <div class="big">
+                    <a href="images/detail/m1.jpg" id="jqzoom" title="orange">
+                        <img src="images/detail/m3.jpg" alt="" id="big-photo" title="orange"/>
+                    </a>
+                </div>
+                <ul class="des_smimg clearfix" id="orange-photo">
+                    <li><a href="#"><img src="images/detail/m4.jpg" class="active" alt=""></a></li>
+                    <li><a href="#"><img src="images/detail/p3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/detail/n3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/detail/q3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/detail/o3.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightArea">
+            <div class="des_content">
+             	<input type="hidden" id="pro_id"/>
+             	<input type="hidden" id="pro_price"/>
+                <h3 class="des_content_tit" id="pro_detail"></h3>
+                <div class="dl clearfix">
+                    <div class="dt">市场价</div>
+                    <div class="dd clearfix"><span class="des_money" id="pro_preprice"></span></div>
+                </div>
+                <div class="dl clearfix">
+                    <div class="dt">优惠价</div>
+                    <div class="dd clearfix"><span class="hg" id="pro_curprice"></span></div>
+                </div>
+                <div class="des_position">
+                    <div class="dl clearfix">
+                        <div class="dt">运费</div>
+                        <div class="dd clearfix">
+                            <div class="select">
+                                <span>江西赣州</span>
+                                <span>至</span>
+                                <select>
+                                    <option value="">湖南</option>
+                                    <option value="">安徽</option>
+                                    <option value="">广东</option>
+                                    <option value="">福建</option>
+                                    <option value="">湖北</option>
+                                </select>
+                            </div>
+                            <span class="theGoods">有货，可当日出货</span>
+                        </div>
+                    </div>
+                    <div class="dl clearfix">
+                        <ul class="comment">
+                            <li>月销量<span>425</span></li>
+                            <li>累计评价<span>1024</span></li>
+                            <li>送脐橙积分<span>10</span></li>
+                        </ul>
+                    </div>
+                    <div class="dl clearfix">
+
+                    </div>
+                    <div class="dl">
+                        <div class="dt des_num">数量</div>
+                        <div class="dd clearfix">
+                            <div class="des_number">
+                                <div class="reduction calculate" id="reduction">-</div>
+                                <div class="des_input">
+                                    <input type="text" placeholder="1" id="textVal" value="1">
+                                </div>
+                                <div class="plus calculate" id="plus">+</div>
+                            </div>
+                            <span class="xg">限购<em>9</em>件</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="des_select">
+                <div class="shop_buy">
+                    <a id="shopbuy" class="shopping_btn" href="#">立即购买</a>
+                    <span class="line"></span>
+                    <a href="#" class="buy_btn"></a>
+                </div>
+                <div class="notes">
+                    注意：此商品可提供普通发票，不提供增值税发票。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hr_15"></div>
+<div class="des_info comWidth clearfix">
+    <div class="leftArea">
+        <div class="recommend">
+            <h3 class="tit">同价位</h3>
+            <div class="item">
+                <div class="item_cont">
+                    <div class="img_item">
+                        <a href="#"><img src="images/h0.jpg" alt=""></a>
+                    </div>
+                    <p><a href="#">江西赣州特产  赣南脐橙 已售4000</a></p>
+                    <p class="money">￥109</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_cont">
+                    <div class="img_item">
+                        <a href="#"><img src="images/h6.jpg" alt=""></a>
+                    </div>
+                    <p><a href="#">江西赣州特产  赣南脐橙 已售4000</a></p>
+                    <p class="money">￥129</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_cont">
+                    <div class="img_item">
+                        <a href="#"><img src="images/h5.jpg" alt=""></a>
+                    </div>
+                    <p><a href="#">江西赣州特产  赣南脐橙 已售4000</a></p>
+                    <p class="money">￥98</p>
+                </div>
+            </div>
+        </div>
+        <div class="hr_15"></div>
+        <div class="recommend">
+            <h3 class="tit">同价位</h3>
+            <div class="item">
+                <div class="item_cont">
+                    <div class="img_item">
+                            <a href="#"><img src="images/h3.jpg" alt=""></a>
+                    </div>
+                    <p><a href="#">江西赣州特产  赣南脐橙 已售4000</a></p>
+                    <p class="money">￥109</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_cont">
+                    <div class="img_item">
+                        <a href="#"><img src="images/h4.jpg" alt=""></a>
+                    </div>
+                    <p><a href="#">烟台特产 栖霞苹果 已售4000</a></p>
+                    <p class="money">￥129</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_cont">
+                    <div class="img_item">
+                        <a href="#"><img src="images/h5.jpg" alt=""></a>
+                    </div>
+                    <p><a href="#">江西赣州特产  赣南脐橙 已售4000</a></p>
+                    <p class="money">￥98</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rightArea">
+        <div class="des_infoContent">
+            <ul class="des_tit">
+                <li class="active"><span>产品介绍</span></li>
+                <li><span>产品评价(12312)</span></li>
+            </ul>
+            <div class="ad">
+                <a href="#"><img src="images/a11.jpg"></a>
+            </div>
+            <div class="info_text">
+                <div class="info_tit">
+                    <h3>强烈推荐</h3><h4>货比三家，还选</h4>
+                </div>
+                <p>赣南脐橙果大形正，一般每个250克，橙红鲜艳，光洁美观，可食率达85%，颜色偏红，比其他产地的橙子颜色略深；
+                    果皮光滑、细腻；果形以椭圆形多见。赣南脐橙肉质脆嫩、化渣，风味浓甜芳香，有较浓郁的橙香味；口感甜酸适度。
+                    赣南脐橙含果汁55%以上，可溶性固形物含量14%以上，最高可达16%，含糖10.5%～12%，含酸0.8～0.9%，固酸比15～17:1。</p>
+                <div class="hr_45"></div>
+                <div class="info_tit">
+                    <h3>强烈推荐</h3><h4>货比三家，还选</h4>
+                </div>
+                <p>赣南脐橙果大形正，一般每个250克，橙红鲜艳，光洁美观，可食率达85%，颜色偏红，比其他产地的橙子颜色略深；
+                    果皮光滑、细腻；果形以椭圆形多见。赣南脐橙肉质脆嫩、化渣，风味浓甜芳香，有较浓郁的橙香味；口感甜酸适度。
+                    赣南脐橙含果汁55%以上，可溶性固形物含量14%以上，最高可达16%，含糖10.5%～12%，含酸0.8～0.9%，固酸比15～17:1。</p>
+                <div class="hr_45"></div>
+                <img src="images/a23.jpg" class="center">
+                <div class="hr_45"></div>
+            </div>
+        </div>
+        <div class="hr_15"></div>
+        <div class="des_infoContent">
+            <h3 class="shopDes_tit">商品评价</h3>
+            <div class="score_box clearfix">
+                <div class="score">
+                    <span>4.7</span><em>分</em>
+                </div>
+                <div class="score_speed">
+                    <ul class="score_speed_text">
+                        <li class="speed_01">非常不满意</li>
+                        <li class="speed_02">不满意</li>
+                        <li class="speed_03">一般</li>
+                        <li class="speed_04">满意</li>
+                        <li>非常满意</li>
+                    </ul>
+                    <div class="score_num">
+                        4.7<i></i>
+                    </div>
+                    <p>共18939位网友参与评分</p>
+                </div>
+            </div>
+            <div class="review_tab">
+                <ul class="review fl">
+                    <li><a href="#" class="active">全部</a></li>
+                    <li><a href="#">满意（3121）</a></li>
+                    <li><a href="#">一般（321）</a></li>
+                    <li><a href="#">不满意（1121）</a></li>
+                </ul>
+                <div class="review_sort fr">
+                    <a href="#" class="review_time">时间排序</a><a href="#" class="review_reco">推荐排序</a>
+                </div>
+            </div>
+            <div class="review_listBox">
+                <div class="review_list clearfix">
+                    <div class="review_userHead fl">
+                        <div class="review_user">
+                            <img src="images/userhead.jpg" alt="">
+                            <p>61***42</p>
+                            <p>金色会员</p>
+                        </div>
+                    </div>
+                    <div class="review_cont">
+                        <div class="review_t clearfix">
+                            <div class="starsBox fl"><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span></div>
+                            <span class="stars_text fl">5分 满意</span>
+                        </div>
+                        <p>包装好发货及时，橙子量足个头够大，色泽挺好新鲜，吃了一个够甜，下回还来 好评</p>
+                        <p><a href="#" class="ding">顶(0)</a><a href="#" class="cai">踩(0)</a></p>
+                    </div>
+                </div>
+                <div class="review_list clearfix">
+                    <div class="review_userHead fl">
+                        <div class="review_user">
+                            <img src="images/userhead.jpg" alt="">
+                            <p>61***42</p>
+                            <p>金色会员</p>
+                        </div>
+                    </div>
+                    <div class="review_cont">
+                        <div class="review_t clearfix">
+                            <div class="starsBox fl"><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span><span class="stars"></span></div>
+                            <span class="stars_text fl">5分 满意</span>
+                        </div>
+                        <p>包装好发货及时，橙子量足个头够大，色泽挺好新鲜，吃了一个够甜，下回还来 好评</p>
+                        <p><a href="#" class="ding">顶(0)</a><a href="#" class="cai">踩(0)</a></p>
+                    </div>
+                </div>
+                <div class="hr_25"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<div class="footer">
+    <p><a href="#">赣南脐橙简介</a><i>|</i><a href="#">赣南脐橙销售平台公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>
+    <p>Copyright &copy; 2006 - 2016 版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+</div>
+<!--<script type="text/javascript">-->
+    <!--$(function () {-->
+        <!--//绑定图片放大插件jqzoom-->
+        <!--$("#jqzoom").jqzoom({-->
+            <!--zoomWidth: 100, //小图片所选区域的宽-->
+            <!--zoomHeight: 100, //小图片所选区域的高-->
+            <!--zoomType: 'reverse' //设置放大镜的类型-->
+        <!--});-->
+    <!--})-->
+<!--</script>-->
+</body>
+</html>
